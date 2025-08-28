@@ -49,9 +49,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['install']], function () {
 
-    Route::get('/', function () {
-        return redirect('login');
-    });
+    Route::get('/', [App\Http\Controllers\LandingController::class, 'index'])->name('landing');
 
     Auth::routes();
     Route::get('/logout', [LoginController::class, 'logout']);
