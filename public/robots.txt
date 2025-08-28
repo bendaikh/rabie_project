@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive directories
+Disallow: /admin/
+Disallow: /portal/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /app/
+Disallow: /config/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+Disallow: /bootstrap/
+Disallow: /public/uploads/
+Disallow: /public/backup/
+
+# Allow important pages
+Allow: /login
+Allow: /register
+Allow: /contact
+
+# Sitemap
+Sitemap: https://rabaira.com/sitemap.xml
